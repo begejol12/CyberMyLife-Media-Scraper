@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Image Scraper Pro</title>
+    <link rel="icon" type="image/x-icon" href="icon/favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #000000 0%, #0A0A0A 100%);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid #333333;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(139, 0, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        h2 {
+            color: #8B00FF;
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #8B00FF, #A020F0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        p {
+            color: #CCCCCC;
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 40px;
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        .crypto-addresses {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .crypto-card {
+            background: rgba(0, 0, 0, 0.4);
+            border: 2px solid #333333;
+            border-radius: 16px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            opacity: 1;
+            transform: translateY(0px);
+        }
+
+        .crypto-card:hover {
+            border-color: #8B00FF;
+            background: rgba(0, 0, 0, 0.6);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(139, 0, 255, 0.3);
+        }
+
+        .crypto-card h3 {
+            color: #8B00FF;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .address-container {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .address-container input {
+            flex: 1;
+            background: rgba(0, 0, 0, 0.6);
+            border: 2px solid #333333;
+            border-radius: 8px;
+            color: #CCCCCC;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            padding: 12px 16px;
+            transition: all 0.3s ease;
+        }
+
+        .address-container input:focus {
+            outline: none;
+            border-color: #8B00FF;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 15px rgba(139, 0, 255, 0.3);
+        }
+
+        .copy-btn {
+            background: linear-gradient(180deg, #1A1A1A 0%, #000000 100%);
+            border: 2px solid #8B00FF;
+            border-radius: 8px;
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 12px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 80px;
+        }
+
+        .copy-btn:hover {
+            background: linear-gradient(180deg, #2A2A2A 0%, #1A1A1A 100%);
+            border-color: #A020F0;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(139, 0, 255, 0.4);
+        }
+
+        .copy-btn:active {
+            transform: translateY(0px);
+            box-shadow: 0 2px 8px rgba(139, 0, 255, 0.3);
+        }
+
+        .copy-btn.copied {
+            background: linear-gradient(180deg, #2A4A2A 0%, #1A3A1A 100%);
+            border-color: #00FF00;
+            color: #00FF00;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+                margin: 10px;
+            }
+            
+            .address-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .copy-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Donate</h2>
+        <p>Anonymous crypto donations - To help us improve and continue the development of my projects, and to support us in our work</p>
+        
+        <div class="crypto-addresses">
+            <div class="crypto-card">
+                <h3>Bitcoin</h3>
+                <div class="address-container">
+                    <input type="text" id="btc-address" value="bc1qvedkgvq5tkduckgemqadqjaww3a9jxqn0jar5n" readonly>
+                    <button onclick="copyAddress('btc-address')" class="copy-btn">Copy</button>
+                </div>
+            </div>
+            
+            <div class="crypto-card">
+                <h3>Ethereum</h3>
+                <div class="address-container">
+                    <input type="text" id="eth-address" value="0x6AccF9a193Ed998e2eEb7BA1bDB47F5246f51854" readonly>
+                    <button onclick="copyAddress('eth-address')" class="copy-btn">Copy</button>
+                </div>
+            </div>
+            
+            <div class="crypto-card">
+                <h3>Litecoin</h3>
+                <div class="address-container">
+                    <input type="text" id="ltc-address" value="Laf1xVYnXBMhZrE9jqDPvpVkL2DRZVurFm" readonly>
+                    <button onclick="copyAddress('ltc-address')" class="copy-btn">Copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyAddress(inputId) {
+            const input = document.getElementById(inputId);
+            const button = input.nextElementSibling;
+            
+            input.select();
+            input.setSelectionRange(0, 99999);
+            
+            navigator.clipboard.writeText(input.value).then(function() {
+                button.textContent = 'Copied!';
+                button.classList.add('copied');
+                
+                setTimeout(function() {
+                    button.textContent = 'Copy';
+                    button.classList.remove('copied');
+                }, 2000);
+            }).catch(function(err) {
+                console.error('Failed to copy: ', err);
+                button.textContent = 'Error';
+                setTimeout(function() {
+                    button.textContent = 'Copy';
+                }, 2000);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.crypto-card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0px)';
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+</html>

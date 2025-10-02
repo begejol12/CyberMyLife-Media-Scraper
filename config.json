@@ -1,0 +1,4 @@
+{
+    "timeout": 30,
+    "max_concurrent_downloads": 10
+}
